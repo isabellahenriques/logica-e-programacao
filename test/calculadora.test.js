@@ -12,4 +12,14 @@ describe('Teste da função somarDoisNumeros', function () {
         expect(resultado).to.equal(5); // Comparo o resultado da função com o resultado esperado
     });
 
+    it ('A função deve ser capaz de somar dois número zerados', function () {    
+        const resultado = somarDoisNumeros(0, 0); // Coleta o resultado da função        
+        expect(resultado).to.equal(0); // Comparo o resultado da função com o resultado esperado
+    });
+
+    it ('A função deve ser capaz de somar dois número negativos', function () {    
+        const resultado = somarDoisNumeros(-15, -20); // Coleta o resultado da função        
+        expect(resultado).to.equal(-35); // Comparo o resultado da função com o resultado esperado
+    });
+
 });
